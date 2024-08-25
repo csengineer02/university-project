@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class CGPACalculator {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get the number of courses
+        System.out.print("Enter the number of courses: ");
+        int numberOfCourses = scanner.nextInt();
+
+        double totalGradePoints = 0;
+        int totalCreditHours = 0;
+
+        // Loop through each course to get credit hours and grade
+        for (int i = 1; i <= numberOfCourses; i++) {
+            System.out.print("Enter the credit hours for course " + i + ": ");
+            int creditHours = scanner.nextInt();
+            System.out.print("Enter the grade points for course " + i + ": ");
+            double gradePoints = scanner.nextDouble();
+
+            totalGradePoints += gradePoints * creditHours;
+            totalCreditHours += creditHours;
+        }
+
+        // Calculate CGPA
+        double cgpa = totalCreditHours == 0 ? 0 : totalGradePoints / totalCreditHours;
+
+        // Display the result
+        System.out.printf("Your CGPA is: %.2f%n", cgpa);
+
+        scanner.close();
+    }
+}
