@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Assignment4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int phone_price=1800;
+        int watch=300;
+        int pc=23900;
+        int router_price=2000;
+        int laptop_price=200000;
+        double total=phone_price+watch+pc+router_price+laptop_price;
+
+        System.out.println("Enter the of installment:");
+        System.out.println("Enter the Name of Bank:");
+
+        int installment=sc.nextInt();
+        double installment_per_month = total/installment;
+        System.out.println("Your monthly installment is :"+installment_per_month);
+
+    }
+}
