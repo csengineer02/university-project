@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ArithmaticOperator {
+
+    public static void main(String[] args) {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter first number: ");
+
+       int num1 = input.nextInt();
+        System.out.print("Enter second number: ");
+
+        int num2 = input.nextInt();
+
+
+      double result = 0;
+
+      result = num1 + num2;
+      System.out.println("sum="+result);
+      result = num1 - num2;
+      System.out.println("sub="+result);
+      result = num1 * num2;
+      System.out.println("mul="+result);
+      result = num1 / num2;
+      System.out.println("div="+result);
+      result = num1 % num2;
+      System.out.println("mod="+result);
+
+
+    }
+}
