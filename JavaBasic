@@ -1,0 +1,102 @@
+import java.util.Random;
+
+public class BankAccount    {
+ public String name;
+ public String id;
+ public double balance;
+ public void deposit(double amount){
+     balance = balance+amount;
+
+    }
+    public void withdraw (double amount){
+     if(amount<balance)
+         balance-=amount;
+    }
+    {
+        id= new Random().nextInt(99999) +"";
+                balance = 100.0;
+    }
+}
+
+// Next Code
+public class Array {
+    public static void main(String[] args) {
+        double [] sampleArray;
+        sampleArray = new double [10];
+        sampleArray [0] = 5.5;
+        sampleArray = new double[2];
+    }
+}
+
+// Next Code
+import java.util.Scanner;
+
+public class Temparature    {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        double cels,fern;
+        System.out.print("Celcius:");
+        cels=input.nextDouble();
+        fern = 1.8 * cels+32;
+        System.out.println("Farenheit: "+fern);
+
+
+
+    }
+}
+
+// Next Code
+import java.util.Scanner;
+
+public class CircleArea {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        float radius,area;
+        System.out.print("Enter radius:"    );
+        radius=input.nextFloat();
+        area = (float) (3.1414 * radius);
+        System.out.println(area);
+
+
+    }
+}
+
+
+// Next Code
+
+import java.util.Scanner;
+
+public class TriangleDemo {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        float base,area;
+        float height;
+        System.out.print("Enter base:"  );
+        base = (float) input.nextDouble();
+        System.out.print("Enter height:"    );
+        height = (float) input.nextDouble();
+        area= (float) (0.5 * base * height);
+    System.out.println("Area of triangle:" +area);
+
+    }
+}
+
+
+// Next Code
+
+import java.util.Scanner;
+
+public class TriangleDemo {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        float base,area;
+        float height;
+        System.out.print("Enter base:"  );
+        base = (float) input.nextDouble();
+        System.out.print("Enter height:"    );
+        height = (float) input.nextDouble();
+        area= (float) (0.5 * base * height);
+    System.out.println("Area of triangle:" +area);
+
+    }
+}
