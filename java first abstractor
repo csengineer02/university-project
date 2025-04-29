@@ -1,0 +1,26 @@
+package Abstractor;
+
+public abstract class First {
+    abstract void main();
+
+}
+class Employee extends First{
+    @Override
+    void main() {
+        String name = "Md. Rakibul Islam Miyad";
+        int salary = 200000;
+        int age = 22;
+        System.out.println("Name:"+name);
+        System.out.println("Age:"+age);
+        System.out.println("Salary:"+salary);
+    }
+
+    }
+    class Main {
+        public static void main(String[] args) {
+            {
+                First f = new Employee();
+                f.main();
+            }
+        }
+}
